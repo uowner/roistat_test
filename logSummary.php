@@ -22,7 +22,7 @@ Class logSummary {
 		$explodedLogString[1] = explode(" ", $explodedLogString[1]);
 		$explodedLogString[2] = explode(" ", $explodedLogString[2]);
 		$this->views++;
-		$this->traffic += $explodedLogString[2][2];
+		$this->traffic += (int) $explodedLogString[2][2];
 		$this->urlsData[$explodedLogString[1][1]] = 1;
 		$this->urls = count($this->urlsData);
 		if(array_key_exists($explodedLogString[2][1], $this->statusCodes)) {
