@@ -38,13 +38,13 @@ Class logSummary {
 		if(strpos($loweredLogString, "googlebot") > 0) {
 			$this->crawlers["Google"]++;
 		}
-		if(strpos($loweredLogString, "bingbot") > 0) {
+		else if(strpos($loweredLogString, "bingbot") > 0) {
 			$this->crawlers["Bing"]++;
 		}
-		if(strpos($loweredLogString, "baiduspider") > 0) {
+		else if(strpos($loweredLogString, "baiduspider") > 0) {
 			$this->crawlers["Baidu"]++;
 		}
-		if(strpos($loweredLogString, "yandexbot") > 0) {
+		else if(strpos($loweredLogString, "yandexbot") > 0) {
 			$this->crawlers["Yandex"]++;
 		}
 	}
