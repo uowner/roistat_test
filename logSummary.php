@@ -56,9 +56,9 @@ Class logSummary {
 
 $myLogSummary = new logSummary;
 
-$fileStream=fopen('access.log','r');
+$fileStream = fopen('access.log','r');
 
-while($line=fgets($fileStream)) {
+while($line = fgets($fileStream)) {
         $myLogSummary->processLogString($line);
 }
 
