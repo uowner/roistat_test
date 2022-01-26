@@ -63,4 +63,6 @@ while($line = fgets($fileStream)) {
 }
 
 $myLogSummary->printData();
+
+fclose($fileStream);
 ?>
